@@ -94,7 +94,7 @@ class Program:
                 [sg.Text('Colunas:', size=(size_x, 0)), sg.Input(key=f'-COLUMN-TAB{k}-', enable_events=True)],
                 [sg.Text('Deslocamento entre colunas:', size=(size_x, 0)), sg.Input(key=f'-OFFSET-COLUMN-TAB{k}-', enable_events=True)],
                 [sg.HorizontalSeparator()],
-                [sg.Text('Orientação das alternativas:', size=(size_x, 0)), sg.Radio('Linhas', f'orientacao{k}', default=True, size=(size_x, 0), key=f'-RADIO1-TAB{k}-'), sg.Radio('Colunas', f'orientacao{k}', default=False, size=(size_x, 0), key=f'-RADIO2-TAB{k}-')],
+                [sg.Text('Orientação das questões:', size=(size_x, 0)), sg.Radio('Linha por linha', f'orientacao{k}', default=True, size=(19, 0), key=f'-RADIO1-TAB{k}-'), sg.Radio('Coluna por coluna', f'orientacao{k}', default=False, size=(0, 0), key=f'-RADIO2-TAB{k}-')],
                 [sg.Text('Tolerância:', size=(size_x, 0)), sg.Slider(range=(0, 100), size=(35, 20), orientation='h', key=f'-PERCENTAGE-TAB{k}-')],
                 [sg.Button('Aplicar', key=f'-BUTTON1-TAB{k}-'), sg.Button('Aplicar tudo', key=f'-BUTTON2-TAB{k}-')],
                 [sg.VPush()],

@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.rest/
+.vscode/
+prints/
+tests/test2
+tests/test3
+parâmetros 1.pkl
+parâmetros 2.pkl
+parâmetros 3.pkl
+manual_de_instruções.rtf
