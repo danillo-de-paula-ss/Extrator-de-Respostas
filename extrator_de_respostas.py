@@ -37,6 +37,9 @@ def valid_float_br(text: str):
 
 class Program:
     def __init__(self):
+        self.set_default()
+    
+    def set_default(self):
         self.imgs: dict[str, list] = {'imgOg': [], 'imgTp': [], 'imgTh': [], 'filename': [], 'imgRect': [[] for _ in range(5)], 'percentage': [[] for _ in range(5)], 'settingData': [[] for _ in range(5)], 'questionsMarked': [[] for _ in range(5)]}
         self.imgsBackup1 = deepcopy(self.imgs)
         self.current_img = 0
@@ -49,7 +52,7 @@ class Program:
         border = 0
 
         setting_layout = [
-            [sg.Button('Importar imagens', key='-BUTTON1-'), sg.Button('Importar pasta de imagens', key='-BUTTON2-')],
+            [sg.Button('Importar imagens', key='-BUTTON1-'), sg.Button('Importar pasta de imagens', key='-BUTTON2-'), sg.Push(), sg.Button('Remover todas as imagens', key='-BUTTON4-')],
             [sg.Text('Quantidade de campos para leitura:'), sg.Spin([i for i in range(1, 6)], initial_value=current_fields, size=(2, 0), enable_events=True, key='-SPIN-')],
             [sg.HorizontalSeparator()],
             [sg.Push(), sg.Text('Estrutura do arquivo .csv'), sg.Push()],
@@ -302,6 +305,16 @@ class Program:
                                             *[';'.join([';'.join(k[l]) for k in result_sheets]) + '\n' for l in range(len(result_sheets[0]))]])
                         
                         sg.popup_ok('Arquivo CSV foi gerado.', title='Aviso')
+
+            if event == '-BUTTON4-':
+                default_parameters = ['', '', '', '', '', '', '', '', '', '', '', 0.0, True, False]
+                for i, tab_keys in enumerate(tabs_keys, 1):
+                    for index, key in enumerate(tab_keys + [f'-PERCENTAGE-TAB{i}-', f'-RADIO1-TAB{i}-', f'-RADIO2-TAB{i}-']):
+                        window[key].update(default_parameters[index])
+                    window[f'-TEXT1-TAB{i}-'].update('')
+                window['-IMAGE-'].update(filename='')
+                window['-COMBO0-'].update(values=[])
+                self.set_default()
 
             # other tabs
             for i, tab_keys in enumerate(tabs_keys, 1):
