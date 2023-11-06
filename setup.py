@@ -24,8 +24,8 @@ config = Executable(
 setup(
     name='extrator_de_respostas',
     version='1.0.0',
-    description='Este programa escaneia gabaritos.',
-    author='DanilloDP',
+    description='Este programa extrai respostas de gabaritos',
+    author='DanilloDePaulaSS',
     options={'build_exe': {'include_msvcr': False,
                            'include_files': FILES,
                            'includes': INCLUDES,
