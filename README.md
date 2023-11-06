@@ -22,4 +22,4 @@ python extrator_de_respostas.py
 - Por fim, é só executar o programa `extrator_de_respostas.exe`
 
 ## Como usar
-Leia o manual de instruções [aqui](https://github.com/danillo-de-paula-ss/Extrator-de-Respostas/blob/main/manual_de_instrucoes.pdf)
+Leia o [manual de instruções](https://github.com/danillo-de-paula-ss/Extrator-de-Respostas/blob/main/manual_de_instrucoes.pdf)
