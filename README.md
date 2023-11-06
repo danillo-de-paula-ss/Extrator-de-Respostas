@@ -8,7 +8,7 @@
 ```
 git clone https://github.com/danillo-de-paula-ss/Extrator-de-Respostas.git
 ```
-- Dentro da pasta do repositório clonado, abra um prompt e instale as dependências.
+- Dentro da pasta do repositório, abra um prompt e instale as dependências.
 ```
 pip install -r requirements.txt
 ```
