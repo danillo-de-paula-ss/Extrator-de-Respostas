@@ -1,5 +1,5 @@
 # Extrator de respostas
-> Programa que extrai respostas de gabaritos e as exporta para um arquivo .csv
+> Programa que extrai as respostas de gabaritos e as exporta para um arquivo .csv
 
 ## Instalação
 ### Para rodar a versão Python
