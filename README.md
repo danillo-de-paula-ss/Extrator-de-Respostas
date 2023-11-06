@@ -19,4 +19,7 @@ python extrator_de_respostas.py
 ### Para rodar a versão Windows
 - Baixe a última versão do programa [aqui](https://github.com/danillo-de-paula-ss/Extrator-de-Respostas/releases)
 - Descompacte o arquivo zip em qualquer diretório do seu computador.
-- Por fim, é só abrir o programa `extrator_de_respostas.exe`
+- Por fim, é só executar o programa `extrator_de_respostas.exe`
+
+## Como usar
+Leia o manual de instruções [aqui](https://github.com/danillo-de-paula-ss/Extrator-de-Respostas/blob/main/manual_de_instrucoes.pdf)
