@@ -304,7 +304,7 @@ class Program:
                             file.writelines([';'.join([';'.join(k) for k in headers]) + '\n',
                                             *[';'.join([';'.join(k[l]) for k in result_sheets]) + '\n' for l in range(len(result_sheets[0]))]])
                         
-                        sg.popup_ok('Arquivo CSV foi gerado.', title='Aviso')
+                        sg.popup_ok('Arquivo CSV foi gerado com sucesso.', title='Aviso')
 
             if event == '-BUTTON4-':
                 default_parameters = ['', '', '', '', '', '', '', '', '', '', '', 0.0, True, False]
